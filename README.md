@@ -60,3 +60,7 @@ This will start the Locust web interface where you can configure the number of u
 - **Upload & Retrain**: Provides a file upload option to update the model with new data.
 - **Performance Testing**: A section dedicated to load testing, simulating multiple requests.
 
+
+## Model API
+
+You can access the Model API [here](https://mlop-wildlife-insight-1.onrender.com).
