@@ -1,6 +1,6 @@
 # Wildlife Insight
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r7_4Xyb1DnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Project Demo](https://img.youtube.com/vi/r7_4Xyb1DnI/0.jpg)](https://youtu.be/r7_4Xyb1DnI)
 
 **Wildlife Insight** is an interactive web app built using **Streamlit** that leverages **machine learning** to classify species and analyze wildlife data efficiently. The app is designed for wildlife conservation efforts, providing tools to predict species, visualize data, and update models with new data for better accuracy.
 
