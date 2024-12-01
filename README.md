@@ -60,6 +60,13 @@ This will start the Locust web interface where you can configure the number of u
 - **Upload & Retrain**: Provides a file upload option to update the model with new data.
 - **Performance Testing**: A section dedicated to load testing, simulating multiple requests.
 
+## LOCUST RESULTS
+
+| Name       | Request Count | Failure Count | Median Response Time | Average Response Time | Min Response Time | Max Response Time | Average Content Size | Requests/s | Failures/s | 50%   | 66%   | 75%   | 80%   | 90%   | 95%   | 98%   | 99%   | 99.90% | 99.99% | 100%  |
+|------------|---------------|---------------|----------------------|-----------------------|-------------------|-------------------|----------------------|------------|------------|-------|-------|-------|-------|-------|-------|-------|-------|--------|--------|-------|
+| **/predict**   | 120           | 1             | 35000                | 33163.11743           | 2046.9266         | 68866.1414         | 117.0166667          | 1.448011648 | 0.012066764 | 35000 | 41000 | 43000 | 47000 | 63000 | 66000 | 67000 | 67000 | 69000  | 69000  | 69000 |
+| **Aggregated** | 120           | 1             | 35000                | 33163.11743           | 2046.9266         | 68866.1414         | 117.0166667          | 1.448011648 | 0.012066764 | 35000 | 41000 | 43000 | 47000 | 63000 | 66000 | 67000 | 67000 | 69000  | 69000  | 69000 |
+
 
 ## Model API
 
