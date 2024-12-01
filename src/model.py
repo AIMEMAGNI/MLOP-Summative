@@ -25,38 +25,3 @@ def create_model(input_shape):
     # Compile the model
     model.compile(loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     return model
-
-
-
-# Function to evaluate the model
-def evaluate_model(model, X_test_scaled, y_test):
-    # Predict probabilities and classes
-    predictions_proba = model.predict(X_test_scaled)
-    predictions = np.argmax(predictions_proba, axis=1)
-
-    # Calculate metrics
-    accuracy = accuracy_score(y_test, predictions)
-    precision = precision_score(y_test, predictions, average='weighted')
-    recall = recall_score(y_test, predictions, average='weighted')
-    f1 = f1_score(y_test, predictions, average='weighted')
-
-    # Evaluate loss
-    loss, _ = model.evaluate(X_test_scaled, y_test, verbose=0)
-
-    # Print the scores
-    print(f"Evaluation Metrics:")
-    print(f"Accuracy: {accuracy:.4f}")
-    print(f"Loss: {loss:.4f}")
-    print(f"Precision: {precision:.4f}")
-    print(f"Recall: {recall:.4f}")
-    print(f"F1 Score: {f1:.4f}")
-
-    # Visualize the metrics
-    metrics = {'Accuracy': accuracy, 'Loss': loss, 'Precision': precision, 'Recall': recall, 'F1 Score': f1}
-    plt.figure(figsize=(10, 6))
-    plt.bar(metrics.keys(), metrics.values(), color='skyblue')
-    plt.title("Model Evaluation Metrics")
-    plt.ylabel("Score")
-    plt.show()
-
-    return metrics
